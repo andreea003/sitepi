@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="style1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <title>Circuit Cuture</title>
+</head>
+
+<body>
+
+  <div class="header">
+    <h1>CIRCUIT CUTURE</h1>
+    <p>Un magazin cu tematica Formula 1</p>
+  </div>
+
+  <div class="navbar">
+    <a href="index.php">Home</a>
+
+    <div class="dropdown">
+      <button class="dropbtn">Contul tau
+        <i class="fa fa-caret-down"></i>
+      </button>  
+      <div class="dropdown-content">
+        <a href="login.php">Login</a>
+        <a href="registration.php">Inregistrare</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">Meniu
+        <i class="fa fa-caret-down"></i>
+      </button>  
+      <div class="dropdown-content">
+        <a href="formula1.html">Formula1</a>
+        <a href="shop.html">Shop</a>
+        <a href="cart.html">Cos de cumparaturi</a>
+      </div>
+    </div>
+    <a href="cart.html" class="cart-icon"  style="float:right">
+    <i class="fa fa-shopping-cart" ></i>
+    <icon-icon name="basket"></icon-icon><span class="cart-count">0</span>
+    </a>
+  </div>
+  <div class="header">
+    <h1>Shop</h1>
+</div>
+
+<div class="container">
+
+  <button id="sortButton">Sorteaza dupa pret</button>
+
+<div class="product-container" id="productContainer">
+  <div class="product">
+    <img src="https://images.footballfanatics.com/mercedes-amg-petronas-f1-team/mercedes-amg-petronas-f1-2023-team-long-sleeved-drive-t-shirt-black_ss4_p-13368447+u-tprl000hxxt0hh18qyg5+v-f5e29660e56141feb014aef3a6619d62.jpg?_hv=2&w=340">
+    <h3>Mercedes AMG Petronas F1 2023 Team Long Sleeved Drive T-Shirt - Black</h3>
+    <span class="price">$70.00</span>
+    <button class="add-cart" data-product-id="1">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-container">
+  <div class="product">
+    <img src="https://images.footballfanatics.com/red-bull-racing/oracle-red-bull-racing-2023-new-era-sergio-perez-9forty-cap_ss4_p-13368682+u-w2cwrs23c8jhofwvsk2o+v-fb78eb9637e14a9687aa30ef7d2b6690.jpg?_hv=2&w=340">
+    <h3>Oracle Red Bull Racing 2023 New Era Sergio Perez 9FORTY Cap</h3>
+    <span class="price">$39.99</span>
+    <button class="add-cart" data-product-id="2">Add to Cart</button>
+  </div>
+</div>
+
+
+<div class="product-container">
+    <div class="product">
+      <img src="https://images.footballfanatics.com/scuderia-ferrari/scuderia-ferrari-2023-team-charles-leclerc-football-shirt_ss5_p-13368442+u-16x1amvoqcccwblf9kfr+v-yfky1zushgcroglxsm3x.jpg?_hv=2&w=340">
+      <h3>Scuderia Ferrari 2023 Team Charles Leclerc Football Shirt</h3>
+      <span class="price">$99.99</span>
+      <button class="add-cart" data-product-id="3">Add to Cart</button>
+    </div>
+  </div>
+
+<div class="product-container">
+    <div class="product">
+      <img src="https://images.footballfanatics.com/scuderia-ferrari/scuderia-ferrari-2023-team-softshell-jacket_ss4_p-13368388+u-1697ehkh6odvy4fw2s3h+v-0ca11877b48b48afa306d16c0a65476d.jpg?_hv=2&w=340">
+      <h3>Scuderia Ferrari 2023 Team Softshell Jacket</h3>
+      <span class="price">$169.99</span>
+      <button class="add-cart" data-product-id="4">Add to Cart</button>
+    </div>
+  </div>  
+
+<div class="product-container">
+    <div class="product">
+    <img src="https://images.footballfanatics.com/mclaren-f1-team/mclaren-essential-logo-hoodie-grey_ss4_p-13306491+u-x5hzp3d73jimj41b3eyx+v-40202ae632da4d88bc687bb190297439.jpg?_hv=2&w=340">
+    <h3>McLaren Essential Logo Hoodie - Grey</h3>
+    <span class="price">$79.99</span>
+    <button class="add-cart" data-product-id="5">Add to Cart</button>
+  </div>
+
+<div class="product-container">
+    <div class="product">
+    <img src="https://images.footballfanatics.com/red-bull-racing/oracle-red-bull-racing-2023-team-water-resistant-jacket_ss4_p-13334222+u-dnk1zfc1r60d6y5s02yh+v-314ccda2493d4de586e2da49d35d6399.jpg?_hv=2&w=600">
+    <h3>Oracle Red Bull Racing 2023 Team Water Resistant Jacket</h3>
+    <span class="price">$165.99</span>
+    <button class="add-cart" data-product-id="6">Add to Cart</button>
+  </div>
+</div>
+
+<div class="footer">
+  <p>&copy; 2023 Circuit Cuture.</p>
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>

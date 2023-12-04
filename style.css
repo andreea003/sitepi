@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: white;
+}
+
+.header {
+    padding: 30px;
+    text-align: center;
+    background: rgb(231, 227, 227);
+}
+
+.header h1 {
+    font-size: 50px;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color:red;
+    
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: rgb(246, 240, 240);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: rgb(253, 248, 248);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: red;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.leftcolumn {
+    float: left;
+    width: 40%;
+}
+
+.rightcolumn {
+    float: right;
+    width: 20%;
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+.card {
+    background-color:  rgba(239, 233, 233, 0.5);
+    padding: 20px;
+    margin-top: 20px; /* Redus pentru a se potrivi mai bine */
+    border-radius: 10px; /* Adaugă colțuri rotunjite pentru un aspect mai plăcut */
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%; /* Asigură că imaginea ocupă întreaga lățime a cardului */
+    height: auto; /* Păstrează proporțiile originale ale imaginii */
+    border-radius: 10px; /* Poate fi ajustată pentru colțuri rotunjite suplimentare */
+    display: block; /* Elimină spațiile inutile sub imagine atunci când este folosită ca element inline */
+    
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navbar a {
+        display: block;
+        width: 100%; /* Ajustare la 100% pentru a se potrivi ecranului mic */
+    }
+}
+
+.leftcolumn .card,
+.rightcolumn .card {
+    margin-bottom: 10px; /* Ajustează spațiul dintre carduri */
+}
+
